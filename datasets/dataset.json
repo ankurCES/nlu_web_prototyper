@@ -1,0 +1,162 @@
+{
+  "entities": {
+    "component": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": ["picture"],
+          "value": "image"
+        },
+        {
+          "synonyms": ["text-box", "input text"],
+          "value": "textbox"
+        },
+        {
+          "synonyms": ["textarea", "area of text"],
+          "value": "text-area"
+        },
+        {
+          "synonyms": [],
+          "value": "button"
+        },
+        {
+          "synonyms": [],
+          "value": "carousel"
+        },
+        {
+          "synonyms": [],
+          "value": "sidebar"
+        },
+        {
+          "synonyms": [],
+          "value": "paragraph"
+        },
+        {
+          "synonyms": ["heading"],
+          "value": "title"
+        },
+        {
+          "synonyms": ["sub title", "sub heading"],
+          "value": "sub-title"
+        },
+        {
+          "synonyms": [],
+          "value": "table"
+        },
+        {
+          "synonyms": [],
+          "value": "card"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "position": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "top",
+            "up"
+          ],
+          "value": "above"
+        },
+        {
+          "synonyms": [
+            "bottom",
+            "down"
+          ],
+          "value": "below"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "createComponent": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "add an "
+            },
+            {
+              "entity": "component",
+              "slot_name": "component",
+              "text": "image"
+            },
+            {
+              "text": " please"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "add a "
+            },
+            {
+              "entity": "component",
+              "slot_name": "component",
+              "text": "button"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "position",
+              "slot_name": "position",
+              "text": "below"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create a "
+            },
+            {
+              "entity": "component",
+              "slot_name": "component",
+              "text": "carousel"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "add a  "
+            },
+            {
+              "entity": "component",
+              "slot_name": "component",
+              "text": "textbox"
+            },
+            {
+              "text": " on "
+            },
+            {
+              "entity": "position",
+              "slot_name": "position",
+              "text": "top"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create a "
+            },
+            {
+              "entity": "component",
+              "slot_name": "component",
+              "text": "table"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

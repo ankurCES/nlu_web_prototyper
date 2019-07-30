@@ -1,0 +1,43 @@
+# turnLightOn intent
+---
+type: intent
+name: createComponent
+slots:
+  - name: component
+    entity: component
+  - name: position
+    entity: position
+utterances:
+  - add an [component](image) please
+  - add a [component](button) [position](below)
+  - create a [component](carousel)
+  - add a  [component](textbox) on [position](top)
+  - create a [component](table)
+
+# component entity
+---
+type: entity
+name: component
+automatically_extensible: no
+values:
+- image
+- textbox
+- text-area
+- button
+- carousel
+- sidebar
+- paragraph
+- title
+- sub-title
+- table
+- card
+
+
+# position entity
+---
+type: entity
+name: position
+automatically_extensible: no
+values:
+- [above, top, up]
+- [below, bottom, down]
