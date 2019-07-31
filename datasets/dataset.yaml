@@ -1,4 +1,4 @@
-# turnLightOn intent
+# create component intent
 ---
 type: intent
 name: createComponent
